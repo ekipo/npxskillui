@@ -49,7 +49,7 @@ export async function extractComputedTokens(url: string, maxPages = 5): Promise<
 
       try {
         const page = await context.newPage();
-        await page.goto(currentUrl, { waitUntil: 'networkidle', timeout: 20000 });
+        await page.goto(currentUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
         // Wait a moment for any JS-rendered content
         await page.waitForTimeout(1500);

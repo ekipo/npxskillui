@@ -1,6 +1,6 @@
 {
   "name": "skillui",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Reverse-engineer design systems from any website, repo, or project. Extracts colors, fonts, spacing, animations, and components - packaged as a .skill file for Claude. Pure static analysis, zero AI, zero API keys.",
   "main": "dist/cli.js",
   "bin": {

@@ -189,7 +189,7 @@ skillui --url https://linear.app --out ./design-systems
 | | |
 |---|---|
 | **Package** | [npmjs.com/package/skillui](https://www.npmjs.com/package/skillui) |
-| **Latest version** | `1.3.2` |
+| **Latest version** | `1.3.4` |
 | **First published** | April 8, 2026 |
 | **Last updated** | April 10, 2026 |
 | **License** | MIT |
@@ -202,11 +202,13 @@ skillui --url https://linear.app --out ./design-systems
 ### Version History
 
 <details>
-<summary>View all 23 releases</summary>
+<summary>View all 25 releases</summary>
 
 | Version | Released |
 |---|---|
-| `1.3.2` ⬅ latest | April 10, 2026 |
+| `1.3.4` ⬅ latest | May 8, 2026 |
+| `1.3.3` | May 8, 2026 |
+| `1.3.2` | April 10, 2026 |
 | `1.3.1` | April 10, 2026 |
 | `1.3.0` | April 10, 2026 |
 | `1.2.9` | April 10, 2026 |

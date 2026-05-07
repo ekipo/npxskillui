@@ -25,8 +25,8 @@ export async function extractLayouts(url: string): Promise<LayoutRecord[]> {
     });
 
     const page = await context.newPage();
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
-    await page.waitForTimeout(1000);
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForTimeout(3000);
 
     const records: LayoutRecord[] = await page.evaluate(() => {
       const LAYOUT_SELECTORS = [

@@ -24,8 +24,8 @@ export async function detectDOMComponents(url: string): Promise<DOMComponent[]> 
     });
 
     const page = await context.newPage();
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
-    await page.waitForTimeout(1000);
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForTimeout(3000);
 
     const components: DOMComponent[] = await page.evaluate(() => {
       // ── Fingerprint an element by its structure ───────────────────────

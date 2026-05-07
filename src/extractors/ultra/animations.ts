@@ -69,8 +69,8 @@ export async function captureAnimations(
       (window as any).__claudeui_originalRAF = window.requestAnimationFrame;
     });
 
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
-    await page.waitForTimeout(2000);
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForTimeout(3000);
 
     // ── Phase 1: Extract CSS keyframes from document.styleSheets ──────────
     const keyframesRaw = await page.evaluate(() => {

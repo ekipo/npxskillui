@@ -59,8 +59,8 @@ export async function captureInteractions(
     });
 
     const page = await context.newPage();
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 25000 });
-    await page.waitForTimeout(1500);
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForTimeout(3000);
 
     for (const { type, selector } of INTERACTIVE_SELECTORS) {
       try {
